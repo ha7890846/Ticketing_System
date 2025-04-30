@@ -1,0 +1,174 @@
+.main {
+  color: 1px solid;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.loginArea {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  right: 120px;
+}
+
+.loginBttn {
+  width: 84px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+.loginBttn:hover {
+  background-color: aqua;
+}
+
+.title {
+  color: #184e7f;
+  font-size: 2.5em;
+  margin-left: 10px;
+}
+
+/* HomePage */
+.first {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading {
+  font-size: 54px;
+  color: #30404d;
+  margin: 0;
+}
+
+.picContent {
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guideBttn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.getBttn {
+  padding: 8px 15px;
+  align-items: center;
+  color: white;
+  background-color: #244779;
+  border-radius: 5px;
+  font-size: 14px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.playBttn {
+  font-size: 22px;
+  align-items: center;
+  color: #244779;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.company {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(209, 68%, 96%);
+  padding: 30px;
+}
+
+.aboutWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #30404d;
+  max-width: 661px;
+  height: 200px;
+  margin: 50px 0 100px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.aboutTitle {
+  font-size: 26px;
+  margin: 0;
+}
+
+.platformContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.platforms {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  max-height: 500px;
+  border: 1px solid #d1dce6;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 50px;
+}
+
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.planCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 420px;
+  min-height: 600px;
+  border: 1px solid #d1dce6;
+  border-radius: 20px;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.planCard h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.planCardPrice {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.planCard button {
+  width: 100%;
+  height: 62px;
+  border-radius: 34px;
+  margin-top: auto;
+  cursor: pointer;
+}

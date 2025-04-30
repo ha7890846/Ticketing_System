@@ -1,0 +1,77 @@
+.mainContainer{
+    display: flex;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.leftContainer{
+    min-width: 65%;
+    
+}
+.rightContainer{
+    min-width: 35%;
+    max-height: 100vh;
+}
+.logo{
+    display: flex;
+    margin-left: 55px;
+    margin-top:25px;
+}
+.title{
+    color: black;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    width: 400px;
+    font-size: large;
+    min-height: 30px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 1px solid #C3C3C3;
+    margin-bottom: 10px;
+}
+form input:hover{
+    border: 1px solid black;
+}
+form button{
+    margin-top: 30px;
+    height: 38px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 20px;
+    border: none;
+    background-color: #C3C3C3;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background-color: #c3c3c3ae;
+    color: black;
+    font-weight: 900;
+    border: 1px solid #060303;
+}
+.content{
+    display: flex;
+    color: #666666;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.newAcc{
+    display: flex;
+    align-items: center;
+}
+.policy{
+    position: fixed;
+    bottom: 60px;
+}
+.terms{
+    display: flex;
+}
+.terms input{
+    font-size: 12px;
+    background-color: aqua;
+}
