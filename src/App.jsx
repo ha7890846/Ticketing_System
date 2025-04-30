@@ -1,5 +1,5 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import "./app.css";
+// import "./app.css";
 import Dashboard from "./Compo/Dashboard";
 import Homepage from "./Compo/Homepage";
 import AllTicket from "./Compo/AllTicket";
