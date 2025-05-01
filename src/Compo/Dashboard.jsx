@@ -1,46 +1,50 @@
-import Sidebar from "./Sidebar";
 import { RiSearchLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import { IoIosMailUnread } from "react-icons/io";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { IoMailOpenOutline } from "react-icons/io5";
+import style from "../styling/dashboard.module.css";
 const Dashboard = () => {
-  
   return (
     <>
-      <div style={{ display: "flex" }}>
-        <section style={{ width: "85%",marginLeft:"15%" }}>
+      <div className={style.main}>
+        <section className={style.header}>
           <h1>Dashboard</h1>
-          <div
-            style={{
-              display: "inline-flex",
-              border: "1px solid black",
-              borderRadius: "5px",
-              padding: "5px",
-              alignItems: "center",
-            }}
-          >
+          <div className={style.searchBox}>
             <RiSearchLine />
-            <input
-              type="text"
-              placeholder="Search for Issue"
-              style={{
-                backgroundColor: "whitesmoke",
-                border: "none",
-                padding: "5px",
-                fontSize: "16px",
-              }}
-            />
+            <input type="text" placeholder="Search for Ticket" />
           </div>
-          <div style={{ display: "inherit", width: "85%" }}>
-            <nav style={{ display: "flex" }}>
+          <div className={style.tickets}>
+            <nav>
               <IoIosMailUnread />
-              <NavLink to="/all-ticket">All Ticket</NavLink>
+              <NavLink
+                to="/all-ticket"
+                className={({ isActive }) =>
+                  isActive ? `${style.link} ${style.active}` : style.link
+                }
+              >
+                <span>All Tickets</span>
+              </NavLink>
               <MdOutlineMarkEmailRead />
-              <NavLink to="/resolved-ticket">Resolved</NavLink>
+              <NavLink
+                to="/resolved-ticket"
+                className={({ isActive }) =>
+                  isActive ? `${style.link} ${style.active}` : style.link
+                }
+              >
+                <span>Resolved</span>
+              </NavLink>
               <IoMailOpenOutline />
-              <NavLink to="/unresolved-ticket">Unresolved</NavLink>
+              <NavLink
+                to="/unresolved-ticket"
+                className={({ isActive }) =>
+                  isActive ? `${style.link} ${style.active}` : style.link
+                }
+              >
+                <span>Unresolved</span>
+              </NavLink>
             </nav>
+            <div style={{ border: "1px solid rgb(224, 235, 245)" }}></div>
           </div>
         </section>
       </div>

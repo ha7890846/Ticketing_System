@@ -14,27 +14,27 @@ const Sidebar = () => {
       </div>
       <nav className="nav">
         <NavLink to="/dashboard" className="nav-link">
-          <GoHome size={24} />
+          <GoHome size={25} />
           <span>Dashboard</span>
         </NavLink>
         <NavLink to="/contact" className="nav-link">
-          <BsChatRightText size={24} />
+          <BsChatRightText size={25} />
           <span>Contact Center</span>
         </NavLink>
         <NavLink to="/analytics" className="nav-link">
-          <IoIosStats size={24} />
+          <IoIosStats size={25} />
           <span>Analytics</span>
         </NavLink>
         <NavLink to="/chatbot" className="nav-link">
-          <RiRobot3Line size={24} />
+          <RiRobot3Line size={25} />
           <span>Chatbot</span>
         </NavLink>
         <NavLink to="/team" className="nav-link">
-          <RiTeamFill size={24} />
+          <RiTeamFill size={25} />
           <span>Team</span>
         </NavLink>
         <NavLink to="/settings" className="nav-link">
-          <IoSettingsOutline size={24} />
+          <IoSettingsOutline size={25} />
           <span>Settings</span>
         </NavLink>
       </nav>

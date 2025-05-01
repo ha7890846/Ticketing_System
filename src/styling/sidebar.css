@@ -1,10 +1,10 @@
 .sidebar {
-    background-color: whitesmoke;
+    background-color:#f5f6f7;
     color: #424242;
     height: 100vh;
-    width: 220px;
+    width: 90px;
     position: fixed;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(233, 217, 217);
     padding: 20px 10px;
   }
   
@@ -17,19 +17,40 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
   }
   
   .nav-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     color: #424242;
     text-decoration: none;
     font-weight: 500;
   }
+  .nav-link:hover{
+    border: 1px solid rgb(196, 162, 228);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .nav-link span {
+    font-size: small;
+    display: none;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-link:hover span {
+    display: flex;
+    color: red;
+  }
+  
+  .nav-link.active span {
+    display: flex;
+  }
   
   .nav-link.active {
-    color: #184e7f;
+    color: #177edf;
   }
   

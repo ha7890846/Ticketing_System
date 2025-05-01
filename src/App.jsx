@@ -16,6 +16,7 @@ import Sidebar from "./Compo/Sidebar";
 import Settings from "./Compo/Settings";
 import ContactCenter from "./Compo/ContactCenter";
 import SidebarLayout from "./Compo/SidebarLayout";
+import Chatbot from "./Compo/Chatbot";
 function App() {
   return (
     <BrowserRouter>
@@ -24,25 +25,28 @@ function App() {
         <Route path="/login" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/all-ticket" element={<AllTicket />} />
-        <Route path="/resolved-ticket" element={<ResolvedTicket />} />
-        <Route path="/unresolved-ticket" element={<UnResolvedTicket />} />
         <Route path="/team" element={<Team />} />
         <Route path="/add-member" element={<AddTeamMember />} />
         <Route path="/settings" element={<Settings />} />
-      </Routes> */}
+        </Routes> */}
       <Routes>
         {/* Homepage Routes */}
         <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        {/* dashboard Routes */}
+        <Route element={<Dashboard/>}>
+          <Route path="/all-ticket" element={<AllTicket />} />
+          <Route path="/resolved-ticket" element={<ResolvedTicket />} />
+          <Route path="/unresolved-ticket" element={<UnResolvedTicket />} />
+        </Route>
 
         {/* Sidebar Layout Routes */}
         <Route element={<SidebarLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/contact" element={<ContactCenter />} />
           <Route path="/analytics" element={<Analytics />} />
-          {/* <Route path="/chatbot" element={<Chatbot />} /> */}
+          <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/team" element={<Team />} />
           <Route path="/settings" element={<Settings />} />
         </Route>

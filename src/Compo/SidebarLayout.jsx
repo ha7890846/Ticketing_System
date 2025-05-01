@@ -5,7 +5,7 @@ const SidebarLayout = () => {
   return (
     <div style={{ display: "flex" }}>
       <Sidebar />
-      <main style={{ marginLeft: "220px", padding: "20px", width: "100%" }}>
+      <main style={{ marginLeft: "140px", padding: "10px", width: "100%" }}>
         <Outlet />
       </main>
     </div>
