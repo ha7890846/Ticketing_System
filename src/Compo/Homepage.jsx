@@ -1,5 +1,5 @@
 import graph from "../assets/sales-chart.png"
-import userCard from "../assets/Card-1.png"
+import userCard from "../assets/Card-1.png";
 import group from "../assets/Group.png"
 import style from "../styling/homepage.module.css";
 import Footer from "./Footer";
@@ -13,6 +13,7 @@ import company4 from "../assets/Company4.png";
 import company5 from "../assets/Company5.png";
 import company6 from "../assets/Company5.png";
 import platform from "../assets/platform.png";
+import icons from "../assets/platform2.png";
 const Homepage = () => {
   const starter = 300;
   const grow = 900;
@@ -85,11 +86,12 @@ const Homepage = () => {
                 calendars, inbound phone system & more!
               </p>
             </div>
-            <div>
+            <div className={style.platformPic}>
+              <img src={icons} alt="" className={style.icons}/>
               <img
                 src={platform}
                 alt="Platforms"
-                className={style.platformImage}
+                className={style.stackPic}
               />
             </div>
           </div>

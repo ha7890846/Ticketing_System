@@ -44,21 +44,19 @@ header {
   color: #30404d;
   margin: 0;
 }
-.picContent{
+.picContent {
   width: 100%;
-
 }
-.busi{
-  position:relative;
+.busi {
+  position: relative;
   top: 50px;
 }
-.grph{
+.grph {
   position: absolute;
   top: 550px;
   right: 104px;
-
 }
-.userCard{
+.userCard {
   position: absolute;
   top: 110px;
   z-index: 1;
@@ -68,7 +66,7 @@ header {
 .textContent {
   width: 90%;
   display: flex;
-  margin-left:5%;
+  margin-left: 5%;
   flex-direction: column;
   gap: 10px;
 }
@@ -146,6 +144,18 @@ header {
   padding: 30px;
   gap: 50px;
 }
+.platformPic {
+  position: relative;
+  bottom: 83px;
+}
+.icons {
+  position: relative;
+  left: 155px;
+  top: 120px;
+}
+.stackPic {
+  position: relative;
+}
 
 .plans {
   display: flex;
@@ -186,10 +196,10 @@ header {
   margin-top: auto;
   cursor: pointer;
 }
-.priceBlock{
+.priceBlock {
   display: flex;
   align-items: baseline;
 }
-.price{
-  color: #3A7ABD;
+.price {
+  color: #3a7abd;
 }
