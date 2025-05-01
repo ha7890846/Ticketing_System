@@ -1,4 +1,5 @@
-import pic from "../assets/home.png";
+
+import group from "../assets/Group.png"
 import style from "../styling/homepage.module.css";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -11,7 +12,6 @@ import company4 from "../assets/Company4.png";
 import company5 from "../assets/Company5.png";
 import company6 from "../assets/Company5.png";
 import platform from "../assets/platform.png";
-
 const Homepage = () => {
   const starter = 300;
   const grow = 900;
@@ -36,7 +36,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className={style.picContent}>
-          <img src={pic} alt="CRM Dashboard" className={style.picImage} />
+            <img src={group} alt="" className={style.busi}/>
         </div>
       </section>
       <section>
@@ -82,7 +82,11 @@ const Homepage = () => {
               </p>
             </div>
             <div>
-              <img src={platform} alt="Platforms" className={style.platformImage} />
+              <img
+                src={platform}
+                alt="Platforms"
+                className={style.platformImage}
+              />
             </div>
           </div>
         </div>
@@ -94,9 +98,8 @@ const Homepage = () => {
               <h1>We have plans for everyone!</h1>
             </div>
             <p className={style.paragraph}>
-              We started with a strong foundation, then simply built all of
-              the sales and marketing tools ALL businesses need under one
-              platform.
+              We started with a strong foundation, then simply built all of the
+              sales and marketing tools ALL businesses need under one platform.
             </p>
           </div>
         </div>
@@ -120,7 +123,9 @@ const Homepage = () => {
               <li>GMB Call Tracking</li>
               <li>24/7 Award Winning Support</li>
             </ul>
-            <button className={style.signupBtn}>Sign up for Registration</button>
+            <button className={style.signupBtn}>
+              Sign up for Registration
+            </button>
           </div>
           <div className={style.planCard}>
             <h1>Grow</h1>
@@ -142,7 +147,9 @@ const Homepage = () => {
               <li>Reputation Management</li>
               <li>24/7 Award Winning Support</li>
             </ul>
-            <button className={style.signupBtn}>Sign up for Registration</button>
+            <button className={style.signupBtn}>
+              Sign up for Registration
+            </button>
           </div>
         </div>
       </section>
