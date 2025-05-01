@@ -1,6 +1,7 @@
 import graph from "../assets/sales-chart.png"
 import userCard from "../assets/Card-1.png";
 import group from "../assets/Group.png"
+import chat from "../assets/chat.png"
 import style from "../styling/homepage.module.css";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -109,7 +110,6 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-
         <div className={style.plans}>
           <div className={style.planCard}>
             <h1>Starter</h1>
@@ -157,6 +157,9 @@ const Homepage = () => {
               Sign up for Registration
             </button>
           </div>
+        </div>
+        <div className={style.chat}>
+          <img src={chat} alt="" />
         </div>
       </section>
       <Footer />
