@@ -46,14 +46,23 @@ header {
 }
 .picContent{
   width: 100%;
-  
+
 }
 .busi{
   position:relative;
   top: 50px;
 }
-.cal{
-  position: sticky;
+.grph{
+  position: absolute;
+  top: 550px;
+  right: 104px;
+
+}
+.userCard{
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+  right: 100px;
 }
 
 .textContent {

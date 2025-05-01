@@ -1,4 +1,5 @@
-
+import graph from "../assets/sales-chart.png"
+import userCard from "../assets/Card-1.png"
 import group from "../assets/Group.png"
 import style from "../styling/homepage.module.css";
 import Footer from "./Footer";
@@ -36,7 +37,10 @@ const Homepage = () => {
           </div>
         </div>
         <div className={style.picContent}>
+            <img src={userCard} alt="" className={style.userCard}/>
             <img src={group} alt="" className={style.busi}/>
+            <img src={graph} alt="" className={style.grph}/>
+
         </div>
       </section>
       <section>
