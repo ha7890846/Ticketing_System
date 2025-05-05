@@ -30,7 +30,7 @@ header {
   color: white;
 }
 .loginBttn{
-  background-color: #F8FB ;
+  background-color: #F8FBFE ;
 }
 .loginBttn:hover,.signBttn:hover{
   background-color: #5c96e7;
@@ -198,6 +198,11 @@ header {
   border-radius: 34px;
   margin-top: auto;
   cursor: pointer;
+}
+.planCard button:hover{
+  background-color: #709bc6;
+  color: white;
+  border: none;
 }
 .priceBlock {
   display: flex;

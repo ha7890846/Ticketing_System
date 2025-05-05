@@ -136,8 +136,8 @@ const Homepage = () => {
             <h3>What's includes:</h3>
             {/* Listing the features */}
               {growList.map((item, index) => (
-                <li key={index}>
-                  <FaCheck style={{ color: "green", marginRight: "10px",backgroundColor:"lightcyan",borderRadius:"50%",}} />
+                <li key={index} style={{display:"flex",alignItems:"center"}}>
+                  <FaCheck style={{ color: "green", marginRight: "10px",width:"15px",height:"15px",backgroundColor:"lightblue",padding:"5px",borderRadius:"50%",}} />
                   {item}
                 </li>
               ))}
@@ -155,14 +155,13 @@ const Homepage = () => {
               <h1 className={style.price}>${grow}</h1>
               <p>/Monthly</p>
             </div>
-            <h3>What's includes:</h3>
-              {starterList.map((item, index) => (
-                <li key={index}>
-                  <FaCheck style={{ color: "green", marginRight: "10px" }} />
+            <h3 >What's includes:</h3>
+            {starterList.map((item, index) => (
+                <li key={index} style={{display:"flex",alignItems:"center"}}>
+                  <FaCheck style={{ color: "green", marginRight: "10px",width:"15px",height:"15px",backgroundColor:"lightblue",padding:"5px",borderRadius:"50%",}} />
                   {item}
                 </li>
               ))}
-
             <button className={style.signupBtn}>
               Sign up for Registration
             </button>
