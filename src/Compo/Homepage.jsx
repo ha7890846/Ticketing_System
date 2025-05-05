@@ -1,7 +1,7 @@
-import graph from "../assets/sales-chart.png"
+import graph from "../assets/sales-chart.png";
 import userCard from "../assets/Card-1.png";
-import group from "../assets/Group.png"
-import chat from "../assets/chat.png"
+import group from "../assets/Group.png";
+import chat from "../assets/chat.png";
 import style from "../styling/homepage.module.css";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -15,6 +15,7 @@ import company5 from "../assets/Company5.png";
 import company6 from "../assets/Company5.png";
 import platform from "../assets/platform.png";
 import icons from "../assets/platform2.png";
+import RaiseIssuePopup from "./RaiseIssuePopup";
 const Homepage = () => {
   const starter = 300;
   const grow = 900;
@@ -39,10 +40,9 @@ const Homepage = () => {
           </div>
         </div>
         <div className={style.picContent}>
-            <img src={userCard} alt="" className={style.userCard}/>
-            <img src={group} alt="" className={style.busi}/>
-            <img src={graph} alt="" className={style.grph}/>
-
+          <img src={userCard} alt="" className={style.userCard} />
+          <img src={group} alt="" className={style.busi} />
+          <img src={graph} alt="" className={style.grph} />
         </div>
       </section>
       <section>
@@ -88,12 +88,8 @@ const Homepage = () => {
               </p>
             </div>
             <div className={style.platformPic}>
-              <img src={icons} alt="" className={style.icons}/>
-              <img
-                src={platform}
-                alt="Platforms"
-                className={style.stackPic}
-              />
+              <img src={icons} alt="" className={style.icons} />
+              <img src={platform} alt="Platforms" className={style.stackPic} />
             </div>
           </div>
         </div>
@@ -158,9 +154,7 @@ const Homepage = () => {
             </button>
           </div>
         </div>
-        <div className={style.chat}>
-          <img src={chat} alt="" />
-        </div>
+          <RaiseIssuePopup />
       </section>
       <Footer />
     </div>

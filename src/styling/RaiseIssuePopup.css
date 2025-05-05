@@ -1,0 +1,115 @@
+.raise-issue-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+  }
+  
+  .raise-issue-img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .raise-issue-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .raise-popup-box {
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
+    width: 350px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Chatbot */
+  .telegram-chat-container {
+    width: 350px;
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .telegram-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    background-color: #2aabee;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .telegram-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .telegram-message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  
+  .telegram-message.sent {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+  }
+  
+  .telegram-message.received {
+    align-self: flex-start;
+    background-color: #fff;
+  }
+  .telegram-input-area {
+    position: relative;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .telegram-input-area input {
+    width: 100%;
+    padding: 10px 60px 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  
+  .telegram-input-area button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #ccc;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .telegram-input-area button:hover{
+    color:#2aabee
+  }

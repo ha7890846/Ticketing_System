@@ -16,18 +16,25 @@ header {
   justify-content: right;
   position: relative;
   right: 120px;
+  gap: 5px;
 }
 
-.loginBttn {
+.loginBttn,.signBttn {
   width: 84px;
   height: 38px;
-  border-radius: 10px;
+  border-radius: 7px;
+  border: none;
 }
-
-.loginBttn:hover {
-  background-color: aqua;
+.signBttn{
+  background-color: #335b93;
+  color: white;
 }
-
+.loginBttn{
+  background-color: #F8FBFE;
+}
+.loginBttn:hover,.signBttn:hover{
+  background-color: #5c96e7;
+}
 .title {
   color: #184e7f;
   font-size: 2.5em;
