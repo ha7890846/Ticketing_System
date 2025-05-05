@@ -30,7 +30,7 @@ header {
   color: white;
 }
 .loginBttn{
-  background-color: #F8FBFE;
+  background-color: #F8FB ;
 }
 .loginBttn:hover,.signBttn:hover{
   background-color: #5c96e7;
@@ -161,10 +161,6 @@ header {
   left: 155px;
   top: 120px;
 }
-.stackPic {
-  position: relative;
-}
-
 .plans {
   display: flex;
   flex-direction: row;
@@ -209,9 +205,4 @@ header {
 }
 .price {
   color: #3a7abd;
-}
-.chat{
-  position: fixed;
-  right: 50px;
-  bottom:50px;
 }

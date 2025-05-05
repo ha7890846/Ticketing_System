@@ -1,7 +1,6 @@
 import graph from "../assets/sales-chart.png";
 import userCard from "../assets/Card-1.png";
 import group from "../assets/Group.png";
-import chat from "../assets/chat.png";
 import style from "../styling/homepage.module.css";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -16,9 +15,26 @@ import company6 from "../assets/Company5.png";
 import platform from "../assets/platform.png";
 import icons from "../assets/platform2.png";
 import RaiseIssuePopup from "./RaiseIssuePopup";
+import { FaCheck } from "react-icons/fa";
 const Homepage = () => {
   const starter = 300;
   const grow = 900;
+  const growList = [
+    "unlimited Users",
+    "GMB Messaging",
+    "Reputation Management",
+    "GMB Call Tracking",
+    "24/7 Award Winning Support",
+  ];
+  const starterList = [
+    "Pipeline Management",
+    "Marketing Automation Campaigns",
+    "Live Call Transfer",
+    "GMB Messaging",
+    "Embeded-able Form Builder",
+    "Reputation Management",
+    "24/7 Award Winning Support",
+  ];
   return (
     <div className={style.main}>
       <Header />
@@ -118,13 +134,13 @@ const Homepage = () => {
               <p>/Monthly</p>
             </div>
             <h3>What's includes:</h3>
-            <ul className={style.featureList}>
-              <li>unlimited Users</li>
-              <li>GMB Messaging</li>
-              <li>Reputation Management</li>
-              <li>GMB Call Tracking</li>
-              <li>24/7 Award Winning Support</li>
-            </ul>
+            {/* Listing the features */}
+              {growList.map((item, index) => (
+                <li key={index}>
+                  <FaCheck style={{ color: "green", marginRight: "10px",backgroundColor:"lightcyan",borderRadius:"50%",}} />
+                  {item}
+                </li>
+              ))}
             <button className={style.signupBtn}>
               Sign up for Registration
             </button>
@@ -140,21 +156,19 @@ const Homepage = () => {
               <p>/Monthly</p>
             </div>
             <h3>What's includes:</h3>
-            <ul className={style.featureList}>
-              <li>Pipeline Management</li>
-              <li>Marketing Automation Campaigns</li>
-              <li>Live Call Transfer</li>
-              <li>GMB Messaging</li>
-              <li>Embeded-able Form Builder</li>
-              <li>Reputation Management</li>
-              <li>24/7 Award Winning Support</li>
-            </ul>
+              {starterList.map((item, index) => (
+                <li key={index}>
+                  <FaCheck style={{ color: "green", marginRight: "10px" }} />
+                  {item}
+                </li>
+              ))}
+
             <button className={style.signupBtn}>
               Sign up for Registration
             </button>
           </div>
         </div>
-          <RaiseIssuePopup />
+        <RaiseIssuePopup />
       </section>
       <Footer />
     </div>
