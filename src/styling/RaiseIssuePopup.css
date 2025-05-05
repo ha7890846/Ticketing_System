@@ -27,7 +27,7 @@
   }
   
   /* Chatbot */
-  .telegram-chat-container {
+  .chatBot-container {
     width: 350px;
     height: 450px;
     border: 1px solid #ccc;
@@ -39,7 +39,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .telegram-header {
+  .chat-header {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -51,7 +51,7 @@
     text-align: center;
   }
   
-  .telegram-messages {
+  .messages {
     flex: 1;
     padding: 15px;
     overflow-y: auto;
@@ -60,30 +60,30 @@
     gap: 10px;
   }
   
-  .telegram-message {
+  .message {
     max-width: 70%;
     padding: 10px 15px;
     border-radius: 15px;
     font-size: 14px;
   }
   
-  .telegram-message.sent {
+  .message.sent {
     align-self: flex-end;
     background-color: #dcf8c6;
   }
   
-  .telegram-message.received {
+  .message.received {
     align-self: flex-start;
     background-color: #fff;
   }
-  .telegram-input-area {
+  .input-area {
     position: relative;
     border-top: 1px solid #ccc;
     padding: 10px;
     background-color: white;
   }
   
-  .telegram-input-area input {
+  .input-area input {
     width: 100%;
     padding: 10px 60px 10px 15px;
     font-size: 14px;
@@ -94,7 +94,7 @@
   }
   
   
-  .telegram-input-area button {
+  .input-area button {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -110,6 +110,6 @@
     justify-content: center;
     cursor: pointer;
   }
-  .telegram-input-area button:hover{
+  .input-area button:hover{
     color:#2aabee
   }
