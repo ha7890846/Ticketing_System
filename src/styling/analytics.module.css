@@ -1,0 +1,21 @@
+.analysis{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:692px 200px;
+}
+.data{
+    color:#00D907;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.points h1{
+    color: #00D907;
+
+}
+p{
+    font-size: 14px;
+}
