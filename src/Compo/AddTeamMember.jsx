@@ -1,13 +1,9 @@
+import "../styling/modal.css"
 const AddTeamMember = () => {
+  
   return (
-    <section>
-      <div style={{position: "relative",
-        width: "400px",
-        height: "250px",
-        backgroundColor: "#ffffff",
-        padding: "30px",
-        border:"1px solid black",
-        borderRadius: "10px"}}>
+    <section className="modal">
+      <div className="modalbox">
         <h1>Add Team Member</h1>
         <p>Talk with colleagues in a group chat. Messages in this group are only visible to it's participants. New teammates may only be invited by the administrators.</p>
         <label htmlFor="username">Username:</label>

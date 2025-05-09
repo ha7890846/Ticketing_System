@@ -20,15 +20,6 @@ import Chatbot from "./Compo/Chatbot";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/login" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/add-member" element={<AddTeamMember />} />
-        <Route path="/settings" element={<Settings />} />
-        </Routes> */}
       <Routes>
         {/* Homepage Routes */}
         <Route path="/" element={<Homepage />} />
@@ -40,7 +31,6 @@ function App() {
           <Route path="/resolved-ticket" element={<ResolvedTicket />} />
           <Route path="/unresolved-ticket" element={<UnResolvedTicket />} />
         </Route>
-
         {/* Sidebar Layout Routes */}
         <Route element={<SidebarLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
@@ -48,6 +38,7 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/add-member" element={<AddTeamMember />} />
           <Route path="/settings" element={<Settings />} />
         </Route>
       </Routes>

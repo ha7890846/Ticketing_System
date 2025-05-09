@@ -1,0 +1,23 @@
+.modal {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    background-color: rgba(255, 251, 251, 0.197);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modalbox {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px;
+    align-items: center;
+    border-radius: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: large;
+  }
